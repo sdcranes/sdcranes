@@ -1,0 +1,55 @@
+@media screen and (max-width: 500px) {
+    html,body{
+      overflow-x: hidden;
+    }
+    #sidebar{
+        display: none;
+    }
+    #center-nav{
+        display: none;
+    }
+    #scrolling-pages{
+        margin-left: 0vw;
+    }
+    #scrolling-pics{
+        width: 100vw;
+        height: 60vh;
+    }
+    #about{
+        width: 100vw;
+        margin-bottom: 15vh;
+    }
+    #products{
+        width: 100vw;
+    }
+    .product{
+        display: block;
+        padding: 0;
+        height: auto;
+    }
+    .product img{
+        height: 65vh;
+    }
+    .product .text{
+        width: 100vw;
+        margin-top: 0;
+        text-align: center;
+        height: 40vh;
+    }
+    .product button{
+        margin-left: 0;
+    }
+    #footer{
+        width: 100vw;
+        flex-direction: column;
+        height: 60vh;
+        padding: 5vw;
+        gap: 5vh;
+    }
+    #footer h2{
+        margin-bottom: 2vh;
+    }
+    .photo{
+        animation-duration: 10s;
+    }
+  }

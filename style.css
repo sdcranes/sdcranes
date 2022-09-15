@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url(620e5796f94823392179d875_AeonikPro-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aeonik Pro';
+    /* color: #fff; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#navbar{
+    width: 100vw;
+    height: 10vh;
+    background-color: #423E3D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    position: fixed;
+    z-index: 20;
+}
+
+#navbar img{
+    height: 100%;
+    cursor: pointer;
+}
+#center-nav{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#center-nav a{
+    text-decoration: none;
+    color: #fff;
+
+}
+button{
+    padding: 1vh 1vw;
+    cursor: pointer;
+    background-color: #E37624;
+    border: none;
+    color: #fff;
+}
+#navbar button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-content{
+    display: inline-block;
+    margin-top: 10vh;
+}
+
+#scrolling-pages{
+    width: 80vh;
+    margin-left: 20vw;
+}
+
+#sidebar{
+    width: 20vw;
+    height: 90vh;
+    background-color: #E37624;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7vh 1vw;
+}
+ul{
+    list-style: none;
+
+}
+#sidebar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#scrolling-pics{
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+#about{
+    width: 80vw;
+    height: 50vh;
+    /* background-color: #423E3D; */
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+}
+#about>a{
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5rem;
+}
+#about h1{
+    color: #989699;
+    font-weight: 600;
+    /* margin-top: 10vh; */
+}
+#about p{
+    font-size: 1.2rem;
+}
+#about button{
+    margin-top: 3vh;
+}
+#about button a{
+    color: #fff;
+    text-decoration: none;
+}
+#about #bold{
+    font-style: italic;
+}
+
+#products{
+    width: 80vw;
+    overflow: hidden;
+}
+.product{
+    width: 80vw;
+    height: 90vh;
+    padding: 2vw;
+    display: flex;
+}
+.product:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.product img{
+    height: 100%;
+    margin-top: 10vh;
+}
+.product .text{
+    padding: 3vw;
+    margin-top: 15vh;
+    width: 50vw;
+    height: 50vh;
+    /* background-color: red; */
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.right button{
+    margin-left: 33vw;
+}
+.text button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer{
+    padding: 2vw 0;
+    width: 80vw;
+    height: 50vh;
+    background-color: #423E3D;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 10vh;
+}
+#footer h2{
+    color: #E37624;
+    margin-bottom: 3vh;
+}
+#contact-us{
+    display: flex;
+    flex-direction: column;
+}
+#contact-us h6{
+    display: flex;
+    align-items: center;
+}
+#contact-us i{
+    font-size: 1.5rem;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+}
+#links a{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+#links i{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+#photos{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    /* background-color: #dadada; */
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transform: translateX(-1500%);
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#a{
+    background-image: url(final1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#b{
+    background-image: url(final2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#c{
+    background-image: url(final3.png);
+    background-size: cover;
+    background-position: center;
+}
+#d{
+    background-image: url(final4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e{
+    background-image: url(final5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#f{
+    background-image: url(final6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#g{
+    background-image: url(final7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#h{
+    background-image: url(final8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#i{
+    background-image: url(final9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#j{
+    background-image: url(final10.png);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-470%);
+    }
+}
